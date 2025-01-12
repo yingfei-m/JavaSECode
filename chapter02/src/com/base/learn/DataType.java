@@ -84,7 +84,7 @@ public class DataType {
         String s2 = s1 + num2 + b4;
         System.out.println(s2); // abc10true
 
-        // String s3 = num2 + b4 + s1; // 编译不通过，因为 int 类型不能 与boolean 运算
+        // String s3 = num2 + b4 + s1; // 编译不通过，因为 int 类型不能与 boolean 运算
         String s4 = num2 + (b4 + s1); // 编译通过
 
         // String类型不能通过强制类型()转换，转为其他的类型
