@@ -15,6 +15,5 @@ public class AccountTest {
         account.deposit(3000);
         System.out.println("账户余额为：" + account.getBalance());
         System.out.println("月利率为：" + account.getMonthlyInterest());
-
     }
 }
