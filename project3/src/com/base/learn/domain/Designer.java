@@ -6,7 +6,7 @@ package com.base.learn.domain;
  * @Author myf15609
  * @Date 2023/9/11
  */
-public class Designer extends Programmer{
+public class Designer extends Programmer {
     private double bonus; // 奖金
 
     public Designer() {
@@ -23,5 +23,11 @@ public class Designer extends Programmer{
 
     public void setBonus(double bonus) {
         this.bonus = bonus;
+    }
+
+    @Override
+    public String toString() {
+        return getDetails() + "\t设计师\t" + getStatus() + "\t" +
+                getBonus() + "\t\t\t" + getEquipment().getDescription();
     }
 }

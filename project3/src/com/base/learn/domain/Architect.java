@@ -6,7 +6,7 @@ package com.base.learn.domain;
  * @Author myf15609
  * @Date 2025/2/7
  */
-public class Architect extends Designer{
+public class Architect extends Designer {
     private int stock; // 股票数
 
     public Architect() {
@@ -23,5 +23,11 @@ public class Architect extends Designer{
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    @Override
+    public String toString() {
+        return getDetails() + "\t架构师\t" + getStatus() + "\t" +
+                getBonus() + "\t" + getStock() + "\t" + getEquipment().getDescription();
     }
 }
